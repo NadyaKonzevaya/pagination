@@ -1,2 +1,31 @@
 @import './common';
 @import './example';
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    justify-content: space-around;
+    padding-top: 75px;
+    list-style: none;
+}
+
+img {
+    width: 270px;
+    height: 180px;
+    background-size: cover;
+}
+
+
+
+.photo-card {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+}
+
+// .photo__link {
+//     text-decoration: none;
+//     display: block;
+//     outline: none;
+//     // color: black;
+// }
